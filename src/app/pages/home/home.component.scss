@@ -1,0 +1,49 @@
+section {
+    color: #fff;
+
+    .container {
+        // border: 1px solid #eee;
+        max-width: 100vw;
+        // max-height: 82vh;
+        margin: auto;
+    }
+}
+
+.action {
+    background-image: url('https://wallpapercrafter.com/desktop7/1776286-black-and-white-blur-gray-iphone-laptop-macbook.jpg');
+    // background-image: url('https://wallpapercrafter.com/desktop7/1770611-blue-sky-sunshine-building-corporate-business.jpg') !important;
+    background-size: cover;
+    opacity: 0.9;
+    max-height: 500px;
+
+    .container {
+        // border: 1px solid #eee;
+        // margin: auto;
+        // top: 50%;
+        // height: 100%;
+        padding: 10%;
+
+        div {
+            // cursor: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            // border: 2px solid #eee;
+            // cursor: pointer;
+            background-color: #000;
+            opacity: 0.6;
+            border-radius: 20px;
+            font-size: 1.5em;
+            padding: 2%;
+            // position: relative;
+            margin: 1em auto;
+
+            &:hover {
+                box-shadow: 10px 5px 5px rgb(80, 79, 79);
+                opacity: 1;
+                // transform: translateY(-20px);
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
+  
+  

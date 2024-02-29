@@ -1,0 +1,29 @@
+.intro {
+    // border: 2px solid red;
+    padding: 3%;
+
+    .container {
+        // border: 2px solid red;
+        // width: 200%;
+        margin: auto;
+        // padding: 3%;
+
+        // .title {
+        //     padding: 3%;
+        // }
+
+        .card {
+            border: none !important;
+            border-radius: 0 !important;
+            width: 50%;
+            padding: 3%;
+            margin: 2em auto;
+            box-shadow: 5px 2px 2px gray;
+
+            &:hover {
+                box-shadow: 10px 5px 5px gray;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}

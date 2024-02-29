@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<section class="services text-black">
+    <div class="services-container bg-light">
+        <div class="heading">
+            <h2 class="text-black text-center text-uppercase"><span>Our Services</span></h2>
+            <div class="hr"></div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3" *ngFor="let s of services">
+                        <div class="row inner-card">
+                            <div class="col-md-3">
+                                <div class="name-logo">
+                                    <img height="100" width="100" [src]=s.logo alt="">
+                                    <h5 class="text-black text-uppercase">{{ s.name }}</h5>
+                                </div>
+                                <div class="categories">
+                                    <span>{{ s.cat1 }}</span>
+                                    <span>{{ s.cat2 }}</span>
+                                    <span>{{ s.cat3 }}</span>
+                                    <span>{{ s.cat4 }}</span>
+                                    <span>{{ s.cat5 }}</span>
+                                    <span>{{ s.cat6 }}</span>
+                                    <span>{{ s.cat7 }}</span>
+                                    <span>{{ s.cat8 }}</span>
+                                    <span>{{ s.cat9 }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

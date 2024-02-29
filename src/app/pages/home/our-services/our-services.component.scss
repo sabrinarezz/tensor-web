@@ -1,0 +1,173 @@
+.services-container {
+    // border: 2px solid red;
+    padding: 1% auto;
+    color: #000 !important;
+    height: max-content;
+
+    $transition-time: 2.3s;
+      
+    .inner-section{
+      // border: 1px solid red;
+      width: 100%;
+      height: inherit;
+      // max-width: 1200px;
+      margin: auto;
+      padding: 2%;
+      
+      .row{
+        // border: 1px solid red;
+        align-items: center;
+        margin: auto;
+        // height: 100vh;
+      }
+
+      .outer-card {
+        // border: 1px solid red;
+        height: max-content;
+        padding: 3%;
+      }
+    
+      .inner-card{
+        // border: 1px solid red;
+        position: relative;
+        // box-shadow: 6px 3px 3px gray;
+        height: 300px;
+        width: 100%;
+        padding: 3%;
+        // margin: 10px 0;
+        transition: ease all $transition-time;
+        perspective: 1200px;
+        &:hover{
+          .cover{
+            transform: rotateX(0deg) rotateY(-180deg);
+            &:before{
+              transform: translateZ(30px);
+            }
+            &:after{
+              background-color: black;
+            }
+            h1{
+              transform: translateZ(100px);
+            }
+            .price{
+              transform: translateZ(60px);
+            }
+            a{
+              transform: translateZ(-60px) rotatey(-180deg);
+            }
+          }
+        }
+      }
+      
+      .cover{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: ease all $transition-time;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+        &:before{
+          content: '';
+          position: absolute;
+          // border: 5px solid rgba(255,255,255,.5);
+          box-shadow: 0 0 12px rgba(0,0,0,.3); 
+          top:20px;
+          left:20px;
+          right:20px;
+          bottom:20px;
+          z-index: 2;
+          transition: ease all $transition-time;
+          transform-style: preserve-3d;
+          transform: translateZ(0px);
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          top:0px;
+          left:0px;
+          right:0px;
+          bottom:0px;
+          z-index: 2;
+          transition: ease all 1.3s;
+          // background: rgba(0,0,0,.4);
+        }
+        &.item-a{
+          background-image: url('https://ik.imagekit.io/sshreiyaaa/sap-logo.jpg?updatedAt=1709055264610');
+        }
+        &.item-b{
+          background-image: url('https://ik.imagekit.io/sshreiyaaa/zoho-logo.jpg?updatedAt=1709055264552');
+        }
+        &.item-c{
+          background-image: url('https://ik.imagekit.io/sshreiyaaa/ms-logo.png?updatedAt=1709055264620');
+        }
+        h1{
+          // border: 1px solid red;
+          // margin: 40% auto auto 20%;
+          bottom: 5%;
+          // top: 40%;
+          left: 10%;
+          // font-weight: 600;
+          position: absolute;
+          // color: white;
+          transform-style: preserve-3d;
+          transition: ease all $transition-time;
+          z-index:3;
+          // font-size: 3em;
+          transform: translateZ(0px);
+        }
+      }
+      .card-back{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #0b0f08;
+        transform-style: preserve-3d;
+        transition: ease all $transition-time;
+        transform: translateZ(-1px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+          transform-style: preserve-3d;
+          transition: ease transform $transition-time, ease background .5s;
+          transform: translateZ(-1px) rotatey(-180deg);
+          background: #fff;
+          opacity: 0.6;
+          list-style-type: none;
+          // border: 1px solid white;
+          // font-weight: 200;
+          // font-size: 1em;
+          color: white;
+          margin: auto;
+          width: 100%;
+          padding: 0.8em 2em;
+          outline: none;
+          text-decoration: none;
+          &:hover{
+            background-color: white;
+            color: #0b0f08;
+          }
+        }
+      }
+    }
+
+    .more-btn {
+      margin-top: 3em;
+      border: none;
+      width: 10em;
+      height: 3em;
+      background-color: rgb(7, 7, 76);
+      color: #fff;
+      border-radius: 2em;
+      // padding: 1em;
+
+      &:hover {
+        transition: 0.3s ease-in-out;
+        background-color: rgb(5, 5, 51);
+        box-shadow: 6px 3px 3px gray;
+      }
+    }
+  }

@@ -1,0 +1,32 @@
+section {
+    height: 100vh;
+    padding: 3%;
+
+    .card {
+        border: none;
+        padding: 3%;
+
+        .inner-card {
+            box-shadow: 5px 2px 2px gray;
+            border-radius: 0% !important;
+            // border: 1px solid rgb(209, 209, 209);
+            // width: 50%;
+
+            &:hover {
+                font-size: 1.5em;
+                box-shadow: 10px 5px 5px gray;
+                transition: 0.3s ease-out;
+            }
+        }
+
+        .contact-icon {
+            padding: 2%;
+        }
+    }
+
+    svg {
+        // border: 2px solid black;
+        padding: 1%;
+        // border-radius: 50%;
+    }
+}
