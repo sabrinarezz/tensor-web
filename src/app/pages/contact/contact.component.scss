@@ -1,5 +1,5 @@
 section {
-    height: 100vh;
+    height: max-content;
     padding: 3%;
 
     .card {
@@ -9,6 +9,7 @@ section {
         .inner-card {
             box-shadow: 5px 2px 2px gray;
             border-radius: 0% !important;
+            margin: 1em auto;
             // border: 1px solid rgb(209, 209, 209);
             // width: 50%;
 
